@@ -1,0 +1,258 @@
+* {
+    padding: 0px;
+    margin: 0;
+}
+
+#Header-Master-Container {
+    background-color: black;
+    width: 100%;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 1;
+}
+
+#Universal-Pictures-Icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 1.5%;
+    height: 86px;
+    width: fit-content;
+}
+
+#Header-ancor {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 68px;
+    gap: 60px;
+    padding-right: 80px;
+}
+
+
+
+.Header-ancor-tags {
+    color: white;
+    /* padding-left: 10%;
+    padding-right: 10%; */
+    text-decoration: none;
+    padding-bottom: 23px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* border: 1px solid green; */
+}
+
+.Header-ancor-tags-tag {
+    text-decoration: none;
+    color: white;
+}
+
+#dots {
+    font-size: 50px;
+}
+#dot-dropdown-container{
+    margin-bottom: 33px;
+}
+#dot-dropdown-container:hover #dot-dropdown{
+    display: flex;
+}
+#dot-dropdown{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    width: 330px;
+    height: 360px;
+    top: 67px;
+    right: 300px;
+    background-color: rgb(0, 115, 255);
+    box-shadow: 0px 0px 10px 0px black;
+    
+}
+.dot-ancor:hover{
+    background-color: rgba(92, 91, 91, 0.267);
+}
+.dot-ancor{
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+    align-content: center;
+    font-weight: 400;
+    height: 50px;
+}
+#Universal-Pictures-Icon-Mini {
+    display: none;
+}
+
+#Header-Container {
+    display: flex;
+    /* justify-content: left; */
+    padding-right: 20px;
+    align-content: center;
+}
+
+.Header-ancor-tags:hover {
+    background-color: rgba(126, 125, 125, 0.255);
+}
+
+.Header-ancor-tags:hover .Header-dropdown-main-Container {
+    display: flex;
+
+}
+
+.Header-dropdown-main-Container {
+    position: absolute;
+    display: none;
+    width: 640px;
+    height: 240px;
+    top: 67px;
+    right: 300px;
+    /* border: 2px solid red; */
+    box-shadow: 0px 0px 10px 0px black;
+    background-color: white;
+}
+
+.sub-div-1 {
+    width: 440px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+}
+
+.movie-div:hover {
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+.movie-div {
+    /* border: 1px solid black; */
+    width: 110px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Movie-Image {
+    padding-top: 5px;
+    width: 80px;
+    height: fit-content;
+}
+
+.Movie-Name {
+    text-decoration: none;
+    font-size: small;
+    font-weight: bold;
+}
+
+.Movie-status {
+    text-decoration: none;
+    text-align: center;
+    font-size: x-small;
+    color: rgba(97, 94, 94, 0.889);
+}
+
+.sub-div-2 {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid rgb(31, 255, 6); */
+    background-color: rgba(0, 136, 255, 0.888);
+}
+
+.sub-div-2-ancors:hover {
+    background-color: rgba(104, 103, 103, 0.232);
+}
+
+.sub-div-2-ancors {
+    /* border: 1px solid purple; */
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+}
+
+.dropdown {
+    display: none;
+    /* position: absolute; */
+    /* top: 10px; */
+    /* padding: 5px;
+    background-color: rgb(0, 0, 0); */
+}
+
+.btn-secondary {
+    background-color: rgb(0, 0, 0) !important;
+    border: 0px;
+}
+
+.btn-secondary:hover {
+    background-color: black;
+}
+
+.dropdown-menu {
+    background-color: black;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(134, 133, 133, 0.315);
+    color: white;
+}
+
+.fa-brands {
+    color: white;
+    font-size: 25px;
+    padding: 8px;
+}
+#Header-Icons{
+    width: 300px;
+}
+@media screen and (max-width : 1220px) {
+    #Header-Icons {
+        display: none;
+    }
+    #dot-dropdown{
+        display: none !important;
+    }
+    .Header-dropdown-main-Container{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width : 767px) {
+    #Universal-Pictures-Icon {
+        display: none;
+    }
+
+    #Header-Master-Container {
+        height: 57px;
+    }
+
+    #Universal-Pictures-Icon-Mini {
+        display: inline-block;
+        position: absolute;
+        height: 57px;
+        top: 0;
+        left: 1.5%;
+
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    #Header-ancor {
+        display: none;
+    }
+}
